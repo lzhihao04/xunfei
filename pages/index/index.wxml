@@ -1,0 +1,10 @@
+<!-- </view> -->
+<view class="head">
+  <view class="record" bind:tap="recordStart">录音</view>
+  <!-- 测试语音识别歌曲 -->
+  <view wx:for="{{test}}" wx:key="index" style="border:1rpx #ccc solid;padding:5rpx 10rpx">
+    <span>{{index+1}}.</span>
+    <span>{{item.singer}}—</span>
+    <span>{{item.song}}</span>
+  </view>
+</view>
